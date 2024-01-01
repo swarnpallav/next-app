@@ -1,0 +1,302 @@
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-style: solid;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 769px) {
+        gap: 4px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.board {
+    background: #84A4FB;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 44px;
+    border-radius: 30px;
+    @media screen and (max-width: 769px) {
+        gap: 4px;
+        padding: 10px;
+        align-items: normal;
+        justify-content: center;
+    }
+}
+
+.circleWrapper {
+    display: flex;
+    gap: 14px;
+    @media screen and (max-width: 769px) {
+        gap: 4px;
+        justify-content: space-between;
+    }
+}
+
+.playerInfo {
+    display: flex;
+    align-items: center;
+    padding: 6px 7px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.selectedCircle {
+    width: fit-content;
+    border-color: #FFA201;
+    border-radius: 50%;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.avatarWrapper {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.playerInfoRightSec {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .playerInfoHeading {
+        color: #869189;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .value {
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 0 58px;
+    gap: 10px;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+    .topSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .heading {
+        color: #424242;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .congrats {
+        color: #F60;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .gameNo {
+        color: #424242;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .bottomSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+    .endBtn {
+        width: 280px;
+        height: 55px;
+        color: #CC0000;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 10px;
+        background: #FFF;
+        border: 1px solid #E5ECFF;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+.connectFourWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+    @media screen and (max-width: 768px) {
+        align-items: normal;
+        justify-content: unset;
+    }
+}
+
+.connectFour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: unset;
+        justify-content: flex-start;
+        border-radius: 0;
+    }
+}
+
+.borderWidth {
+    border-width: 10px;
+    @media screen and (max-width: 768px) {
+        border-width: 5px;
+    }
+}
+
+.borderWidth0 {
+    border-width: 0;
+}
+
+.loadingText {
+    color: white; 
+    @media screen and (max-width: 768px) {
+        align-self: center;
+        margin-top: 40vh;
+    }
+}
+
+.hr {
+    margin-left: -10px;
+    width: calc(100% + 20px);
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.getInfoRightSec {
+    display: flex;
+    justify-content: space-around;
+    .playerInfoHeading {
+        color: #869189;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .value {
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.getPlayerInfo {
+    display: flex;
+    align-items: center;
+    padding: 6px 7px;
+    border-radius: 10px;
+    width: 100%;
+    gap: 10px;
+}
+.undoBtn {
+    width: 280px;
+    height: 55px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    background: #4B7BFF;
+    border: none;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.inp {
+    background: inherit;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+    font-weight: 400;
+    color: #000;
+}
+
+.getInfoWrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.getInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: white;
+    gap: 15px;
+    border-radius: 30px;
+    padding: 5%;
+    max-width: 768px;
+}
+
+.getPlayer1Info {
+    border: 1px solid #CCE2D3;
+    background: #DCF6E4;
+}
+
+.getPlayer2Info {
+    border: 1px solid #E2DCC7;
+    background: #F7EFD5;
+}
+
+.getInfo1Border {
+    border: 10px solid #37AC5D;
+}
+
+.getInfo2Border {
+    border: 10px solid #F8D145;
+}
+
+.inpWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
